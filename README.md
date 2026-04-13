@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# TelkomX Troubleshooter
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+TelkomX Troubleshooter is a mobile and web support experience prototype built with Expo and React Native. The application is designed to improve how customers, support agents, and technicians manage network issues, service updates, and troubleshooting workflows on the Telkom platform.
 
-## Get started
+## Hackathon Background
 
-1. Install dependencies
+This project was developed as a hackathon prototype for the **Telkom 10x Hackathon – Geekulcha & Telkom (09/2025)**.
 
-   ```bash
-   npm install
-   ```
+- **Achieved 2nd Place**, developing a mobile and web application designed to enhance customer experience and improve service usability on the Telkom platform
 
-2. Start the app
+## Core Capabilities
 
-   ```bash
-   npx expo start
-   ```
+- Role-based access flows for **Customer**, **Agent**, and **Technician** experiences
+- Customer-facing dashboard with ticket progress, outage visibility, and quick actions
+- Community forum and chatbot entry points for faster self-service support
+- Agent and technician workspace routes for queue, ticket, and notification workflows
+- Cross-platform support through Expo for mobile and web environments
 
-In the output, you'll find options to open the app in a
+## Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Framework**: Expo + React Native
+- **Routing**: Expo Router
+- **Language**: TypeScript
+- **UI/Styling**: Native components, Expo UI packages, NativeWind/Tailwind utilities
+- **Storage**: AsyncStorage (prototype-level local persistence)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
+- `app/` - Main application routes and screens
+- `app/(auth)/` - Authentication screens
+- `app/(tabs)/` - Customer tab navigation screens
+- `app/agent/` - Agent-specific views
+- `app/technician/` - Technician-specific views
 
-When you're ready, run:
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+- Expo-compatible environment (Expo Go app, emulator, or browser for web)
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the App
+
+```bash
+npm run start
+```
+
+You can also run platform-specific commands:
+
+```bash
+npm run android
+npm run ios
+npm run web
+```
+
+## Development Notes
+
+- Lint the project:
+
+```bash
+npm run lint
+```
+
+- Reset starter scaffolding (if needed):
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This repository currently does not include a dedicated license file. Add a `LICENSE` file if you plan to distribute or open-source the project publicly.
